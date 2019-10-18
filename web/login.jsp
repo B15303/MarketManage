@@ -42,6 +42,14 @@
         }
     %>
 
+    <%
+        if(session.isNew()){ //判断session是否新建，是则不操作
+
+        }else {  //不为新建的销毁
+            session.invalidate();
+        }
+    %>
+
 </head>
 <body class="login_bg">
     <section class="loginBox">

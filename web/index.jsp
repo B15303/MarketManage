@@ -5,6 +5,16 @@
     <title>超市账单管理系统</title>
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
+
+    <%
+        String username = (String) session.getAttribute("UserName");
+        if (null == username){
+            response.sendRedirect("login.jsp");
+        }
+    %>
+
+
 </head>
 <body>
 <!--头部-->
@@ -12,7 +22,7 @@
     <h1>超市账单管理系统</h1>
 
     <div class="publicHeaderR">
-        <p><span>下午好！</span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
+        <p><span id="hours"></span><span style="color: #fff21b"> <%out.print(username);%></span> , 欢迎你！</p>
         <a href="login.jsp">退出</a>
     </div>
 </header>
@@ -38,9 +48,9 @@
     <div class="right">
         <img class="wColck" src="img/clock.jpg" alt=""/>
         <div class="wFont">
-            <h2>Admin</h2>
+            <h2><%out.print(username);%></h2>
             <p>欢迎来到超市账单管理系统!</p>
-			<span id="hours"></span>
+<%--			<span id="hours"></span>--%>
         </div>
     </div>
 </section>
