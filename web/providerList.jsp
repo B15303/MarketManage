@@ -13,7 +13,7 @@
 
     <div class="publicHeaderR">
         <p><span>下午好！</span><span style="color: #fff21b"> Admin</span> , 欢迎你！</p>
-        <a href="login.html">退出</a>
+        <a href="login.jsp">退出</a>
     </div>
 </header>
 <!--时间-->
@@ -27,11 +27,11 @@
         <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
         <nav>
             <ul class="list">
-                <li><a href="billList.html">账单管理</a></li>
-                <li id="active"><a href="providerList.html">供应商管理</a></li>
-                <li><a href="userList.html">用户管理</a></li>
-                <li><a href="password.html">密码修改</a></li>
-                <li><a href="login.html">退出系统</a></li>
+                <li><a href="billList.jsp">账单管理</a></li>
+                <li id="active"><a href="providerList.jsp">供应商管理</a></li>
+                <li><a href="userList.jsp">用户管理</a></li>
+                <li><a href="password.jsp">密码修改</a></li>
+                <li><a href="login.jsp">退出系统</a></li>
             </ul>
         </nav>
     </div>
@@ -44,7 +44,7 @@
             <span>供应商名称：</span>
             <input type="text" placeholder="请输入供应商的名称"/>
             <input type="button" value="查询"/>
-            <a href="providerAdd.html">添加供应商</a>
+            <a href="providerAdd.jsp">添加供应商</a>
         </div>
         <!--供应商操作表格-->
         <table class="providerTable" cellpadding="0" cellspacing="0">
@@ -65,8 +65,8 @@
                 <td>15918230478</td>
                 <td>2015-11-12</td>
                 <td>
-                    <a href="providerView.html"><img src="img/read.png" alt="查看" title="查看"/></a>
-                    <a href="providerUpdate.html"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                    <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
+                    <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
                     <a href="#" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>
                 </td>
             </tr>
@@ -78,8 +78,8 @@
                 <td>15918230478</td>
                 <td>2015-11-12</td>
                 <td>
-                    <a href="providerView.html"><img src="img/read.png" alt="查看" title="查看"/></a>
-                    <a href="providerUpdate.html"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                    <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
+                    <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
                     <a href="#" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>
                 </td>
             </tr>
