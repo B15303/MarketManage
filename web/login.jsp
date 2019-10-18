@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <title>系统登录 - 超市账单管理系统</title>
     <link rel="stylesheet" href="css/style.css"/>
+
+    <script type="text/javascript">
+        $(function () {
+            $("[name='username']").blur(function () {
+                $.ajax({
+                    url:'loginuser',
+                    type:'get',
+                    dataType:'text',
+                    data:'username='+this.value,
+                    success:function (datas) {
+
+                    },
+                    error:function () {
+                        alert("AJAX请求失败！");
+                    }
+                })
+            })
+        })
+    </script>
+
 </head>
 <body class="login_bg">
     <section class="loginBox">
@@ -11,7 +31,7 @@
             <h1>超市账单管理系统</h1>
         </header>
         <section class="loginCont">
-            <form class="loginForm" action="welcome.html">
+            <form class="loginForm" action="login">
                 <div class="inputbox">
                     <label for="user">用户名：</label>
                     <input id="user" type="text" name="username" placeholder="请输入用户名" required/>
