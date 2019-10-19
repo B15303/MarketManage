@@ -23,7 +23,7 @@
 
     <div class="publicHeaderR">
         <p><span id="hours"></span><span style="color: #fff21b"> <%out.print(username);%></span> , 欢迎你！</p>
-        <a href="login.jsp">退出</a>
+        <a href="logout">退出</a>
     </div>
 </header>
 <!--时间-->
@@ -41,7 +41,7 @@
                 <li><a href="providerList.jsp">供应商管理</a></li>
                 <li><a href="userList.jsp">用户管理</a></li>
                 <li><a href="password.jsp">密码修改</a></li>
-                <li><a href="login.jsp">退出系统</a></li>
+                <li><a href="logout">退出系统</a></li>
             </ul>
         </nav>
     </div>

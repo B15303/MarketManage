@@ -12,7 +12,7 @@
         <h1>超市账单管理系统</h1>
         <div class="publicHeaderR">
             <p><span id="hours">下午好！</span><span style="color: #fff21b"> <%out.print(session.getAttribute("UserName"));%></span> , 欢迎你！</p>
-            <a href="login.jsp">退出</a>
+            <a href="logout">退出</a>
         </div>
     </header>
 <!--时间-->
@@ -30,7 +30,7 @@
                     <li><a href="providerList.jsp">供应商管理</a></li>
                     <li><a href="userList.jsp">用户管理</a></li>
                     <li><a href="password.jsp">密码修改</a></li>
-                    <li><a href="login.jsp">退出系统</a></li>
+                    <li><a href="logout">退出系统</a></li>
                 </ul>
             </nav>
         </div>
