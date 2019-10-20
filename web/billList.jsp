@@ -1,4 +1,5 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -26,7 +27,7 @@
             <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
             <nav>
                 <ul class="list">
-                    <li id="active"><a href="billList.jsp">账单管理</a></li>
+                    <li id="active"><a href="billList">账单管理</a></li>
                     <li><a href="providerList.jsp">供应商管理</a></li>
                     <li><a href="userList.jsp">用户管理</a></li>
                     <li><a href="password.jsp">密码修改</a></li>
@@ -46,8 +47,10 @@
                 <span>供应商：</span>
                 <select name="tigong" >
                     <option value="">--请选择--</option>
-                    <option value="">北京市粮油总公司</option>
-                    <option value="">邯郸市五得利面粉厂</option>
+                    <c:forEach var="providers" items="${billList}">
+                    <option value="">${providers.providerId}</option>
+<%--                    <option value="">邯郸市五得利面粉厂</option>--%>
+                    </c:forEach>
                 </select>
 
                 <span>是否付款：</span>
@@ -71,32 +74,50 @@
                     <th width="10%">创建时间</th>
                     <th width="30%">操作</th>
                 </tr>
-                <tr>
-                    <td>213</td>
-                    <td>123</td>
-                    <td>北京市粮油总公司</td>
-                    <td>22.00</td>
-                    <td>未付款</td>
-                    <td>2015-11-12</td>
-                    <td>
-                        <a href="billView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
-                        <a href="billUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
-                        <a href="#" class="removeBill"><img src="img/schu.png" alt="删除" title="删除"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>PRO-CODE—001</td>
-                    <td>测试供应商001</td>
-                    <td>邯郸市五得利面粉厂</td>
-                    <td>15918230478</td>
-                    <td>15918230478</td>
-                    <td>2015-11-12</td>
-                    <td>
-                        <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
-                        <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
-                        <a href="#" class="removeBill"><img src="img/schu.png" alt="删除" title="删除"/></a>
-                    </td>
-                </tr>
+                <c:forEach var="bills" items="${billList}">
+                    <tr>
+                        <td>${bills.billCode}</td>
+                        <td>${bills.productName}</td>
+                        <td>${bills.providerId}</td>
+                        <td>${bills.totalPrice}</td>
+                        <td>
+                            <c:if test="${bills.isPayment == 1}">未支付</c:if>
+                            <c:if test="${bills.isPayment == 2}">已支付</c:if>
+                        </td>
+                        <td>${bills.creationDate}</td>
+                        <td>
+                            <a href="billView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
+                            <a href="billUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                            <a href="#" class="removeBill"><img src="img/schu.png" alt="删除" title="删除"/></a>
+                        </td>
+                    </tr>
+                </c:forEach>
+<%--                <tr>--%>
+<%--                    <td>213</td>--%>
+<%--                    <td>123</td>--%>
+<%--                    <td>北京市粮油总公司</td>--%>
+<%--                    <td>22.00</td>--%>
+<%--                    <td>未付款</td>--%>
+<%--                    <td>2015-11-12</td>--%>
+<%--                    <td>--%>
+<%--                        <a href="billView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>--%>
+<%--                        <a href="billUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>--%>
+<%--                        <a href="#" class="removeBill"><img src="img/schu.png" alt="删除" title="删除"/></a>--%>
+<%--                    </td>--%>
+<%--                </tr>--%>
+<%--                <tr>--%>
+<%--                    <td>PRO-CODE—001</td>--%>
+<%--                    <td>测试供应商001</td>--%>
+<%--                    <td>邯郸市五得利面粉厂</td>--%>
+<%--                    <td>15918230478</td>--%>
+<%--                    <td>15918230478</td>--%>
+<%--                    <td>2015-11-12</td>--%>
+<%--                    <td>--%>
+<%--                        <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>--%>
+<%--                        <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>--%>
+<%--                        <a href="#" class="removeBill"><img src="img/schu.png" alt="删除" title="删除"/></a>--%>
+<%--                    </td>--%>
+<%--                </tr>--%>
             </table>
         </div>
     </section>
