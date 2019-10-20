@@ -9,7 +9,7 @@ public class Smbms_User {
     private String userName;
     private String userPassword;
     private int gender;
-    private Date birthdat;
+    private Date birthday;
     private String phone;
     private String address;
     private int userRole;
@@ -22,6 +22,14 @@ public class Smbms_User {
 
     public long getId() {
         return id;
+    }
+
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
     public void setId(long id) {
@@ -58,14 +66,6 @@ public class Smbms_User {
 
     public void setGender(int gender) {
         this.gender = gender;
-    }
-
-    public Date getBirthdat() {
-        return birthdat;
-    }
-
-    public void setBirthdat(Date birthdat) {
-        this.birthdat = birthdat;
     }
 
     public String getPhone() {
@@ -140,13 +140,13 @@ public class Smbms_User {
         this.workPicPath = workPicPath;
     }
 
-    public Smbms_User(long id, String userCode, String userName, String userPassword, int gender, Date birthdat, String phone, String address, int userRole, long createdBy, Date creationDate, long modifyBy, Date modifyDate, String idPicPath, String workPicPath) {
+    public Smbms_User(long id, String userCode, String userName, String userPassword, int gender, Date birthday, String phone, String address, int userRole, long createdBy, Date creationDate, long modifyBy, Date modifyDate, String idPicPath, String workPicPath) {
         this.id = id;
         this.userCode = userCode;
         this.userName = userName;
         this.userPassword = userPassword;
         this.gender = gender;
-        this.birthdat = birthdat;
+        this.birthday = birthday;
         this.phone = phone;
         this.address = address;
         this.userRole = userRole;

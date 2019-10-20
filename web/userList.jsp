@@ -1,10 +1,22 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ page import="java.util.Date" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>超市账单管理系统</title>
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
+    <%
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+        String now = sdf.format(date);
+        session.setAttribute("date",now);
+        session.setAttribute("sdf",sdf);
+    %>
 </head>
 <body>
 <!--头部-->
@@ -27,8 +39,8 @@
             <nav>
                 <ul class="list">
                     <li><a href="billList">账单管理</a></li>
-                    <li><a href="providerList.jsp">供应商管理</a></li>
-                    <li  id="active"><a href="userList.jsp">用户管理</a></li>
+                    <li><a href="providerList">供应商管理</a></li>
+                    <li  id="active"><a href="userList">用户管理</a></li>
                     <li><a href="password.jsp">密码修改</a></li>
                     <li><a href="logout">退出系统</a></li>
                 </ul>
@@ -56,32 +68,54 @@
                     <th width="10%">用户类型</th>
                     <th width="30%">操作</th>
                 </tr>
-                <tr>
-                    <td>hanlu</td>
-                    <td>韩露</td>
-                    <td>女</td>
-                    <td>20</td>
-                    <td>15918230478</td>
-                    <td>经理</td>
-                    <td>
-                        <a href="userView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
-                        <a href="userUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
-                        <a href="#" class="removeUser"><img src="img/schu.png" alt="删除" title="删除"/></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>PRO-CODE—001</td>
-                    <td>测试供应商001</td>
-                    <td>韩露</td>
-                    <td>15918230478</td>
-                    <td>15918230478</td>
-                    <td>2015-11-12</td>
-                    <td>
-                        <a href="userView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
-                        <a href="userUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
-                        <a href="#" class="removeUser"><img src="img/schu.png" alt="删除" title="删除"/></a>
-                    </td>
-                </tr>
+                <c:forEach var="userList" items="${userList}">
+                    <tr>
+                        <td>${userList.userCode}</td>
+                        <td>${userList.userName}</td>
+                        <td>
+                            <c:if test="${userList.gender == 1}">女</c:if>
+                            <c:if test="${userList.gender == 2}">男</c:if>
+                        </td>
+                        <td>${date - sdf.format(userList.birthday)}</td>
+                        <td>${userList.phone}</td>
+                        <td>
+                            <c:if test="${userList.userRole == 1}">系统管理员</c:if>
+                            <c:if test="${userList.userRole == 2}">经理</c:if>
+                            <c:if test="${userList.userRole == 3}">普通员工</c:if>
+                        </td>
+                        <td>
+                            <a href="userView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
+                            <a href="userUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                            <a href="#" class="removeUser"><img src="img/schu.png" alt="删除" title="删除"/></a>
+                        </td>
+                    </tr>
+                </c:forEach>
+<%--                <tr>--%>
+<%--                    <td>hanlu</td>--%>
+<%--                    <td>韩露</td>--%>
+<%--                    <td>女</td>--%>
+<%--                    <td>20</td>--%>
+<%--                    <td>15918230478</td>--%>
+<%--                    <td>经理</td>--%>
+<%--                    <td>--%>
+<%--                        <a href="userView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>--%>
+<%--                        <a href="userUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>--%>
+<%--                        <a href="#" class="removeUser"><img src="img/schu.png" alt="删除" title="删除"/></a>--%>
+<%--                    </td>--%>
+<%--                </tr>--%>
+<%--                <tr>--%>
+<%--                    <td>PRO-CODE—001</td>--%>
+<%--                    <td>测试供应商001</td>--%>
+<%--                    <td>韩露</td>--%>
+<%--                    <td>15918230478</td>--%>
+<%--                    <td>15918230478</td>--%>
+<%--                    <td>2015-11-12</td>--%>
+<%--                    <td>--%>
+<%--                        <a href="userView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>--%>
+<%--                        <a href="userUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>--%>
+<%--                        <a href="#" class="removeUser"><img src="img/schu.png" alt="删除" title="删除"/></a>--%>
+<%--                    </td>--%>
+<%--                </tr>--%>
             </table>
 
         </div>

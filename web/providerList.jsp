@@ -1,4 +1,5 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -28,8 +29,8 @@
         <nav>
             <ul class="list">
                 <li><a href="billList">账单管理</a></li>
-                <li id="active"><a href="providerList.jsp">供应商管理</a></li>
-                <li><a href="userList.jsp">用户管理</a></li>
+                <li id="active"><a href="providerList">供应商管理</a></li>
+                <li><a href="userList">用户管理</a></li>
                 <li><a href="password.jsp">密码修改</a></li>
                 <li><a href="logout">退出系统</a></li>
             </ul>
@@ -57,32 +58,47 @@
                 <th width="10%">创建时间</th>
                 <th width="30%">操作</th>
             </tr>
-            <tr>
-                <td>PRO-CODE—001</td>
-                <td>测试供应商001</td>
-                <td>韩露</td>
-                <td>15918230478</td>
-                <td>15918230478</td>
-                <td>2015-11-12</td>
-                <td>
-                    <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
-                    <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
-                    <a href="#" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>
-                </td>
-            </tr>
-            <tr>
-                <td>PRO-CODE—001</td>
-                <td>测试供应商001</td>
-                <td>韩露</td>
-                <td>15918230478</td>
-                <td>15918230478</td>
-                <td>2015-11-12</td>
-                <td>
-                    <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
-                    <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
-                    <a href="#" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>
-                </td>
-            </tr>
+            <c:forEach var="providerList" items="${providerList}">
+                <tr>
+                    <td>${providerList.proCode}</td>
+                    <td>${providerList.proName}</td>
+                    <td>${providerList.proContact}</td>
+                    <td>${providerList.proPhone}</td>
+                    <td>${providerList.proFax}</td>
+                    <td>${providerList.creationDate}</td>
+                    <td>
+                        <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
+                        <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                        <a href="#" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>
+                    </td>
+                </tr>
+            </c:forEach>
+<%--            <tr>--%>
+<%--                <td>PRO-CODE—001</td>--%>
+<%--                <td>测试供应商001</td>--%>
+<%--                <td>韩露</td>--%>
+<%--                <td>15918230478</td>--%>
+<%--                <td>15918230478</td>--%>
+<%--                <td>2015-11-12</td>--%>
+<%--                <td>--%>
+<%--                    <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>--%>
+<%--                    <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>--%>
+<%--                    <a href="#" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>--%>
+<%--                </td>--%>
+<%--            </tr>--%>
+<%--            <tr>--%>
+<%--                <td>PRO-CODE—001</td>--%>
+<%--                <td>测试供应商001</td>--%>
+<%--                <td>韩露</td>--%>
+<%--                <td>15918230478</td>--%>
+<%--                <td>15918230478</td>--%>
+<%--                <td>2015-11-12</td>--%>
+<%--                <td>--%>
+<%--                    <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>--%>
+<%--                    <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>--%>
+<%--                    <a href="#" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>--%>
+<%--                </td>--%>
+<%--            </tr>--%>
         </table>
 
     </div>
