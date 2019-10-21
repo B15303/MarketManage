@@ -17,4 +17,5 @@ public interface ManageService {
     public Smbms_User getUserById(String userId) throws Exception;
     public Smbms_Bill getBillById(String billId) throws Exception;
     public int getProviderAdd(String []param) throws Exception;
+    public int getUserAdd(String []param) throws Exception;
 }

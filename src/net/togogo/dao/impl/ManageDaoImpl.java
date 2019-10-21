@@ -107,4 +107,14 @@ public class ManageDaoImpl implements ManageDao {
         int count = C3p0Utils.ProUpdate(sql,param);
         return count;
     }
+
+    @Override
+    public int getUserAdd(String[] param) throws Exception {
+
+        String sql = "INSERT INTO " +
+                "smbms_user (userCode,userName,userPassword,gender,birthday,phone,address,userRole) " +
+                "VALUES (?,?,?,?,?,?,?,?)";
+        int count = C3p0Utils.ProUpdate(sql,param);
+        return count;
+    }
 }

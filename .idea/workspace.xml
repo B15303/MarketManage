@@ -7,26 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="835bbee8-3ecb-481d-b638-bbaf6349c77b" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/togogo/servlet/SelectProviderServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/togogo/servlet/SelectUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/togogo/servlet/ViewBillServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/togogo/servlet/ViewProviderServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/net/togogo/servlet/ViewUserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/togogo/dao/ManageDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/dao/ManageDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/togogo/service/ManageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/service/ManageService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/togogo/servlet/BillListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/servlet/BillListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/billAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/billAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/billList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/billList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/billView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/billView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/providerAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/providerAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/providerList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/providerList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/providerView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/providerView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userView.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/password.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/userAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userAdd.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,19 +29,28 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/providerAdd.jsp">
+        <entry file="file://$PROJECT_DIR$/web/userAdd.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+            <state relative-caret-position="-450">
+              <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java">
+        <entry file="file://$PROJECT_DIR$/web/password.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="161">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/LoginUserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-464">
+              <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,10 +59,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+            <state relative-caret-position="250">
+              <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,10 +121,8 @@
         <option value="$PROJECT_DIR$/src/net/togogo/bean/Smbms_User.java" />
         <option value="$PROJECT_DIR$/web/billUpdate.jsp" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/web/password.jsp" />
         <option value="$PROJECT_DIR$/web/providerUpdate.jsp" />
         <option value="$PROJECT_DIR$/web/public.jsp" />
-        <option value="$PROJECT_DIR$/web/userAdd.jsp" />
         <option value="$PROJECT_DIR$/web/userUpdate.jsp" />
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/SelectUserServlet.java" />
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/SelectProviderServlet.java" />
@@ -133,12 +137,15 @@
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/ViewBillServlet.java" />
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/BillListServlet.java" />
         <option value="$PROJECT_DIR$/web/billAdd.jsp" />
+        <option value="$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java" />
+        <option value="$PROJECT_DIR$/web/providerAdd.jsp" />
         <option value="$PROJECT_DIR$/src/net/togogo/dao/ManageDao.java" />
         <option value="$PROJECT_DIR$/src/net/togogo/service/ManageService.java" />
-        <option value="$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java" />
         <option value="$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java" />
-        <option value="$PROJECT_DIR$/web/providerAdd.jsp" />
+        <option value="$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java" />
+        <option value="$PROJECT_DIR$/web/userAdd.jsp" />
+        <option value="$PROJECT_DIR$/web/password.jsp" />
       </list>
     </option>
   </component>
@@ -149,9 +156,10 @@
     <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="width" value="919" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="520" />
+    <option name="y" value="3" />
+    <option name="width" value="852" />
     <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -450,7 +458,7 @@
       <workItem from="1571543083742" duration="9815000" />
       <workItem from="1571556003831" duration="194000" />
       <workItem from="1571557389888" duration="4243000" />
-      <workItem from="1571620526612" duration="12323000" />
+      <workItem from="1571620526612" duration="17798000" />
     </task>
     <task id="LOCAL-00001" summary="1.创建bean类映射数据库表&#10;2.创建LoginServlet类">
       <created>1571387490841</created>
@@ -529,17 +537,24 @@
       <option name="project" value="LOCAL" />
       <updated>1571561404549</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1.实现按用户名查询用户&#10;2.实现按供应商名查询供应商&#10;3.实现查看用户详情&#10;4.实现查看供应商详情&#10;5.实现查看账单详情&#10;6.实现添加供应商信息">
+      <created>1571639195479</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1571639195479</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53208000" />
+    <option name="totallyTimeSpent" value="58683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16944024" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -549,14 +564,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32741934" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22741936" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.33709678" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.09516129" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32903227" />
@@ -626,7 +641,8 @@
     <MESSAGE value="1.拆分Servlet为Dao、Service、Servlet三层架构" />
     <MESSAGE value="1.实现查询所有账单（未实现按条件查询）" />
     <MESSAGE value="1.修改net.togogo.bean中Smbms_User的birthdat为birthday&#10;2.实现供应商数据查询并在页面展示&#10;3.实现用户数据查询并在页面展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.修改net.togogo.bean中Smbms_User的birthdat为birthday&#10;2.实现供应商数据查询并在页面展示&#10;3.实现用户数据查询并在页面展示" />
+    <MESSAGE value="1.实现按用户名查询用户&#10;2.实现按供应商名查询供应商&#10;3.实现查看用户详情&#10;4.实现查看供应商详情&#10;5.实现查看账单详情&#10;6.实现添加供应商信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.实现按用户名查询用户&#10;2.实现按供应商名查询供应商&#10;3.实现查看用户详情&#10;4.实现查看供应商详情&#10;5.实现查看账单详情&#10;6.实现添加供应商信息" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/net/togogo/bean/Smbms_Address.java">
@@ -773,16 +789,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/LoginUserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="39" column="46" lean-forward="true" selection-start-line="39" selection-start-column="46" selection-end-line="39" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/LogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -842,13 +848,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="48" column="33" lean-forward="true" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -951,13 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/password.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="76" column="41" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/providerUpdate.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -969,13 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/userAdd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="31" column="49" selection-start-line="31" selection-start-column="49" selection-end-line="31" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -1177,36 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/service/ManageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/ManageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/PasswordServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-144">
@@ -1217,10 +1172,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/ManageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/service/ManageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="105" column="43" selection-start-line="105" selection-start-column="43" selection-end-line="105" selection-end-column="43" />
+        <state relative-caret-position="445">
+          <caret line="117" column="21" lean-forward="true" selection-start-line="117" selection-start-column="21" selection-end-line="117" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1229,8 +1214,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="379">
+          <caret line="32" column="67" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1239,8 +1224,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/providerAdd.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        <state relative-caret-position="1054">
+          <caret line="43" column="47" lean-forward="true" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="34" column="42" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/LoginUserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-464">
+          <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="19" column="55" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/password.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/userAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
         </state>
       </provider>
     </entry>

@@ -5,6 +5,32 @@
     <title>超市账单管理系统</title>
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("[name='userId']").blur(function () {
+
+                $.ajax({
+                    url:'user',  //请求的地址
+                    type:'post',  //请求方式
+                    dataType:'text',  //数据类型
+                    data:'userName='+this.value,  //传到后台的参数
+                    success:function (datas) {    //接收到的返回值
+                        if (datas == 'true'){
+                            $("[name='msg']").html("用户编码已存在");
+                        } else {
+                            $("[name='msg']").html("");
+                        }
+                    },
+                    error:function () {
+                        alert("AJAX请求失败！");
+                    }
+                })
+            })
+        })
+    </script>
+
 </head>
 <body>
 <!--头部-->
@@ -41,12 +67,13 @@
             <span>用户管理页面 >> 用户添加页面</span>
         </div>
         <div class="providerAdd">
-            <form action="#">
+            <form action="userAdd" method="get">
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div class="">
                     <label for="userId">用户编码：</label>
                     <input type="text" name="userId" id="userId"/>
                     <span>*请输入用户编码，且不能重复</span>
+                    <div name="msg"></div>
                 </div>
                 <div>
                     <label for="userName">用户名称：</label>
@@ -55,21 +82,21 @@
                 </div>
                 <div>
                     <label for="userpassword">用户密码：</label>
-                    <input type="text" name="userpassword" id="userpassword"/>
+                    <input type="password" name="userpassword" id="userpassword"/>
                     <span>*密码长度必须大于6位小于20位</span>
 
                 </div>
                 <div>
                     <label for="userRemi">确认密码：</label>
-                    <input type="text" name="userRemi" id="userRemi"/>
+                    <input type="password" name="userRemi" id="userRemi" onblur="renew()"/>
                     <span>*请输入确认密码</span>
                 </div>
                 <div>
                     <label >用户性别：</label>
 
-                    <select name="">
-                        <option value="man">男</option>
-                        <option value="woman">女</option>
+                    <select name="gender">
+                        <option name="gender" value="2">男</option>
+                        <option name="gender" value="1">女</option>
                     </select>
                     <span></span>
                 </div>
@@ -89,15 +116,15 @@
                 </div>
                 <div>
                     <label >用户类别：</label>
-                    <input type="radio" name="userlei"/>管理员
-                    <input type="radio" name="userlei"/>经理
-                    <input type="radio" name="userlei"/>普通用户
+                    <input type="radio" name="userlei" value="1"/>管理员
+                    <input type="radio" name="userlei" value="2"/>经理
+                    <input type="radio" name="userlei" value="3"/>普通用户
 
                 </div>
                 <div class="providerAddBtn">
                     <!--<a href="#">保存</a>-->
                     <!--<a href="userList.jsp">返回</a>-->
-                    <input type="button" value="保存" onclick="history.back(-1)"/>
+                    <input type="submit" value="保存" />
                     <input type="button" value="返回" onclick="history.back(-1)"/>
                 </div>
             </form>

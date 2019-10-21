@@ -62,4 +62,9 @@ public class ManageServiceImpl implements ManageService {
     public int getProviderAdd(String[] param) throws Exception {
         return manageDao.getProviderAdd(param);
     }
+
+    @Override
+    public int getUserAdd(String[] param) throws Exception {
+        return manageDao.getUserAdd(param);
+    }
 }

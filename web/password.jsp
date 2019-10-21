@@ -6,27 +6,6 @@
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
-<%--    <script type="text/javascript">--%>
-<%--        $(function () {--%>
-<%--            $.ajax({--%>
-<%--                url:'oldpwd',--%>
-<%--                type:'post',--%>
-<%--                dataType:'text',--%>
-<%--                data:'oldPassword='+this.value,--%>
-<%--                success:function (datas) {--%>
-<%--                    if (datas == true){--%>
-<%--                        $("[name='old']").html("√");--%>
-<%--                    }else {--%>
-<%--                        $("[name='old']").html("原密码错误");--%>
-<%--                    }--%>
-<%--                },--%>
-<%--                error:function () {--%>
-<%--                    alert("AJAX请求失败！")--%>
-<%--                }--%>
-<%--            })--%>
-<%--        })--%>
-<%--    </script>--%>
-
     <%
         String flag = null;
         flag = (String)request.getAttribute("flag");
@@ -41,11 +20,13 @@
 
     <script type="text/javascript">
     function renew() {   //确认密码
-        var renew = $("reNewPassword").val();
-        if ($("newPassword").val() == renew){
-            return true;
+        var newp = document.getElementById("newPassword");
+        var renew = document.getElementById("reNewPassword");
+        if (newp == renew){
+            $("[id='msg']").html("√");
+            return false;
         }else {
-            alert("两次密码不一致");
+            $("[id='msg']").html("两次密码不一致");
             return false;
         }
     }
@@ -100,8 +81,9 @@
                     </div>
                     <div>
                         <label for="reNewPassword">确认新密码：</label>
-                        <input type="password" name="reNewPassword" id="reNewPassword" onblur="renew()" required/>
-                        <span name="msg">*请确认密码，保证和新密码一致</span>
+                        <input type="password" name="reNewPassword" id="reNewPassword" onchange="renew()" required/>
+                        <span >*请确认密码，保证和新密码一致</span>
+                        <div id="msg"></div>
                     </div>
                     <div class="providerAddBtn">
                         <!--<a href="#">保存</a>-->
