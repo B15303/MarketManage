@@ -81,13 +81,13 @@
                 </div>
                 <div>
                     <label >是否付款：</label>
-                    <input type="radio" name="zhifu"checked />未付款
-                    <input type="radio" name="zhifu"/>已付款
+                    <input type="radio" value="1" name="zhifu"checked />未付款
+                    <input type="radio" value="2" name="zhifu"/>已付款
                 </div>
                 <div class="providerAddBtn">
                     <!--<a href="#">保存</a>-->
                     <!--<a href="billList.jsp">返回</a>-->
-                    <input type="button" value="保存" onclick="history.back(-1)"/>
+                    <input type="submit" value="保存" />
                     <input type="button" value="返回" onclick="history.back(-1)"/>
                 </div>
             </form>

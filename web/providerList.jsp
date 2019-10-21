@@ -6,6 +6,14 @@
     <title>超市账单管理系统</title>
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
+    <script type="text/javascript">
+        function sendname() {
+            var sendname = $("#sendname").val();
+            window.location.href="selectprovider?name="+sendname;
+        }
+    </script>
+
 </head>
 <body>
 <!--头部-->
@@ -43,8 +51,8 @@
         </div>
         <div class="search">
             <span>供应商名称：</span>
-            <input type="text" placeholder="请输入供应商的名称"/>
-            <input type="button" value="查询"/>
+            <input type="text" id="sendname" placeholder="请输入供应商的名称"/>
+            <input type="button" value="查询" onclick="sendname()"/>
             <a href="providerAdd.jsp">添加供应商</a>
         </div>
         <!--供应商操作表格-->
@@ -67,7 +75,7 @@
                     <td>${providerList.proFax}</td>
                     <td>${providerList.creationDate}</td>
                     <td>
-                        <a href="providerView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
+                        <a href="providerView?id=${providerList.id}"><img src="img/read.png" alt="查看" title="查看"/></a>
                         <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
                         <a href="#" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>
                     </td>

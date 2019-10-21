@@ -11,29 +11,25 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet("/billList")
-public class BillListServlet extends HttpServlet {
+@WebServlet("/billView")
+public class ViewBillServlet extends HttpServlet {
     ManageService manageService = new ManageServiceImpl();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //进入billList页面，查询所有账单数据并展示到billList页面
+        String id = req.getParameter("id");
 
         try {
-            //查询所有账单数据
-            List<Smbms_Bill> billList = manageService.getBillAll();
-//            for(Smbms_Bill providerId:billList){
-//                String proId = providerId.toString();
-//                Smbms_Provider smbms_provider = manageService.getProById(proId);
-//            }
-            //将账单数据放入request域中
-            req.setAttribute("billList",billList);
-            //发送到billList页面
-            req.getRequestDispatcher("/billList.jsp").forward(req,resp);
+            Smbms_Bill smbms_bill = manageService.getBillById(id);
+            String proId = String.valueOf(smbms_bill.getProviderId()); //强转int为String
+            Smbms_Provider smbms_provider = manageService.getProById(proId);
+            req.setAttribute("bill",smbms_bill);
+            req.setAttribute("provider",smbms_provider);
+            req.getRequestDispatcher("billView.jsp").forward(req,resp);
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 }

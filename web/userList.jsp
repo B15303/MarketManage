@@ -17,6 +17,14 @@
         session.setAttribute("date",now);
         session.setAttribute("sdf",sdf);
     %>
+    
+    <script type="text/javascript">
+        function sendname() {
+            var sendname = $("#sendname").val();
+            window.location.href="selectuser?name="+sendname;
+        }
+    </script>
+    
 </head>
 <body>
 <!--头部-->
@@ -53,8 +61,8 @@
             </div>
             <div class="search">
                 <span>用户名：</span>
-                <input type="text" placeholder="请输入用户名"/>
-                <input type="button" value="查询"/>
+                <input type="text" id="sendname" placeholder="请输入用户名"/>
+                <input type="button" value="查询" onclick="sendname()"/>
                 <a href="userAdd.jsp">添加用户</a>
             </div>
             <!--用户-->
@@ -84,7 +92,7 @@
                             <c:if test="${userList.userRole == 3}">普通员工</c:if>
                         </td>
                         <td>
-                            <a href="userView.jsp"><img src="img/read.png" alt="查看" title="查看"/></a>
+                            <a href="userView?id=${userList.id}"><img src="img/read.png" alt="查看" title="查看"/></a>
                             <a href="userUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
                             <a href="#" class="removeUser"><img src="img/schu.png" alt="删除" title="删除"/></a>
                         </td>

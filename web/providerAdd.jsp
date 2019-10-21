@@ -41,7 +41,7 @@
             <span>供应商管理页面 >> 供应商添加页面</span>
         </div>
         <div class="providerAdd">
-            <form action="#">
+            <form action="proAdd" method="get">
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div class="">
                     <label for="providerId">供应商编码：</label>
@@ -55,7 +55,7 @@
                 </div>
                 <div>
                     <label for="people">联系人：</label>
-                    <input type="text" name="people" id="people"/>
+                    <input type="text" name="contact" id="people"/>
                     <span>*请输入联系人</span>
 
                 </div>
@@ -67,12 +67,12 @@
                 <div>
                     <label for="address">联系地址：</label>
                     <input type="text" name="address" id="address"/>
-                    <span></span>
+                    <span>*请输入联系地址</span>
                 </div>
                 <div>
                     <label for="fax">传真：</label>
                     <input type="text" name="fax" id="fax"/>
-                    <span></span>
+                    <span>*请输入传真</span>
                 </div>
                 <div>
                     <label for="describe">描述：</label>
@@ -81,7 +81,7 @@
                 <div class="providerAddBtn">
                     <!--<a href="#">保存</a>-->
                     <!--<a href="providerList.jsp">返回</a>-->
-                    <input type="button" value="保存" onclick="history.back(-1)"/>
+                    <input type="submit" value="保存" />
                     <input type="button" value="返回" onclick="history.back(-1)"/>
                 </div>
             </form>

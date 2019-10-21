@@ -37,4 +37,29 @@ public class ManageServiceImpl implements ManageService {
     public Smbms_Provider getProById(String proId) throws Exception {
         return manageDao.getProById(proId);
     }
+
+    @Override
+    public List<Smbms_User> getUserByName(String Name) throws Exception {
+        return manageDao.getUserByName(Name);
+    }
+
+    @Override
+    public List<Smbms_Provider> getProByName(String ProName) throws Exception {
+        return manageDao.getProByName(ProName);
+    }
+
+    @Override
+    public Smbms_User getUserById(String userId) throws Exception {
+        return manageDao.getUserById(userId);
+    }
+
+    @Override
+    public Smbms_Bill getBillById(String billId) throws Exception {
+        return manageDao.getBillById(billId);
+    }
+
+    @Override
+    public int getProviderAdd(String[] param) throws Exception {
+        return manageDao.getProviderAdd(param);
+    }
 }
