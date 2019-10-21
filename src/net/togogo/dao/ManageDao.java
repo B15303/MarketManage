@@ -20,4 +20,5 @@ public interface ManageDao {
     public int getUserAdd(String []param) throws Exception;
     public int getBillDelete(String billId) throws Exception;
     public int getProDelete(String proId) throws Exception;
+    public int getUserDelete(String userId) throws Exception;
 }

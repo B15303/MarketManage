@@ -77,4 +77,9 @@ public class ManageServiceImpl implements ManageService {
     public int getProDelete(String proId) throws Exception {
         return manageDao.getProDelete(proId);
     }
+
+    @Override
+    public int getUserDelete(String userId) throws Exception {
+        return manageDao.getUserDelete(userId);
+    }
 }
