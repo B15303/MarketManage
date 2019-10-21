@@ -124,4 +124,11 @@ public class ManageDaoImpl implements ManageDao {
         int count = C3p0Utils.ProUpdate(sql,billId);
         return count;
     }
+
+    @Override
+    public int getProDelete(String proId) throws Exception {
+        String sql = "delete from smbms_provider where id = ?";
+        int count = C3p0Utils.ProUpdate(sql,proId);
+        return count;
+    }
 }

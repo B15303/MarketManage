@@ -72,4 +72,9 @@ public class ManageServiceImpl implements ManageService {
     public int getBillDelete(String billId) throws Exception {
         return manageDao.getBillDelete(billId);
     }
+
+    @Override
+    public int getProDelete(String proId) throws Exception {
+        return manageDao.getProDelete(proId);
+    }
 }
