@@ -67,4 +67,9 @@ public class ManageServiceImpl implements ManageService {
     public int getUserAdd(String[] param) throws Exception {
         return manageDao.getUserAdd(param);
     }
+
+    @Override
+    public int getBillDelete(String billId) throws Exception {
+        return manageDao.getBillDelete(billId);
+    }
 }

@@ -18,4 +18,5 @@ public interface ManageService {
     public Smbms_Bill getBillById(String billId) throws Exception;
     public int getProviderAdd(String []param) throws Exception;
     public int getUserAdd(String []param) throws Exception;
+    public int getBillDelete(String billId) throws Exception;
 }

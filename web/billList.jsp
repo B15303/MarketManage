@@ -88,7 +88,7 @@
                         <td>
                             <a href="billView?id=${bills.id}"><img src="img/read.png" alt="查看" title="查看"/></a>
                             <a href="billUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
-                            <a href="#" class="removeBill"><img src="img/schu.png" alt="删除" title="删除"/></a>
+                            <a href="billDelete?id=${bills.id}" class="removeBill"><img src="img/schu.png" alt="删除" title="删除"/></a>
                         </td>
                     </tr>
                 </c:forEach>
