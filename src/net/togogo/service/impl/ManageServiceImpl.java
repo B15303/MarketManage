@@ -82,4 +82,14 @@ public class ManageServiceImpl implements ManageService {
     public int getUserDelete(String userId) throws Exception {
         return manageDao.getUserDelete(userId);
     }
+
+    @Override
+    public int getUserUpdate(String[] param) throws Exception {
+        return manageDao.getUserUpdate(param);
+    }
+
+    @Override
+    public int getProUpdate(String[] param) throws Exception {
+        return manageDao.getProUpdate(param);
+    }
 }

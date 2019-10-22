@@ -23,12 +23,23 @@ public class ProviderAddServlet extends HttpServlet {
         String proAddress = req.getParameter("address");
         String proFax = req.getParameter("fax");
         String proDesc = req.getParameter("describe");
+        String modify = req.getParameter("modify");
+        String id = req.getParameter("id");
         String []param = {proCode,proName,proContact,proPhone,proAddress,proFax,proDesc};
 
+        if (!modify.equals("true")){
         try {
-            int count =manageService.getProviderAdd(param);
+            int count = manageService.getProviderAdd(param);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        }else {
+            String []param1 = {proCode,proName,proContact,proPhone,proAddress,proFax,proDesc,id};
+            try {
+                int count = manageService.getProUpdate(param1);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         req.getRequestDispatcher("providerList").forward(req,resp);
     }

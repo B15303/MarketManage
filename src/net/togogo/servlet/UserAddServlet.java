@@ -25,12 +25,23 @@ public class UserAddServlet extends HttpServlet {
         String phone = req.getParameter("userphone");
         String address = req.getParameter("userAddress");
         String userRole = req.getParameter("userlei");
+        String modify = req.getParameter("modify");
+        String id = req.getParameter("id");
         String []param = {userCode,userName,userPassword,gender,birthday,phone,address,userRole};
 
+        if (!modify.equals("true")){
         try {
             int count = manageService.getUserAdd(param);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+        }else {
+            String []param1 = {userCode,userName,userPassword,gender,birthday,phone,address,userRole,id};
+            try {
+                int count = manageService.getUserUpdate(param1);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         req.getRequestDispatcher("userList").forward(req,resp);
     }

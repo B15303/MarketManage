@@ -138,4 +138,24 @@ public class ManageDaoImpl implements ManageDao {
         int count = C3p0Utils.ProUpdate(sql,userId);
         return count;
     }
+
+    @Override
+    public int getUserUpdate(String[] param) throws Exception {
+
+        String sql = "UPDATE smbms_user SET userCode= ?,userName = ?,userPassword = ?," +
+                     "gender = ?,birthday = ?,phone = ?,address = ?,userRole = ? WHERE id= ? ";
+
+        int count = C3p0Utils.ProUpdate(sql,param);
+        return count;
+    }
+
+    @Override
+    public int getProUpdate(String[] param) throws Exception {
+
+        String sql = "UPDATE smbms_provider SET proCode = ?,proName = ?,proContact = ?," +
+                     "proPhone = ?,proAddress = ?,proFax = ?,proDesc = ? WHERE id= ? ";
+
+        int count = C3p0Utils.ProUpdate(sql,param);
+        return count;
+    }
 }

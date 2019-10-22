@@ -1,4 +1,5 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -29,6 +30,18 @@
                 })
             })
         })
+    </script>
+
+    <script type="text/javascript">
+        function renew() {   //确认密码
+            var newp = document.getElementById("userpassword").value;
+            var renew = document.getElementById("userRemi").value;
+            if (newp == renew){
+                $("#msg1").html("√");
+            }else {
+                $("#msg1").html("两次密码不一致");
+            }
+        }
     </script>
 
 </head>
@@ -71,54 +84,53 @@
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div class="">
                     <label for="userId">用户编码：</label>
-                    <input type="text" name="userId" id="userId"/>
+                    <input type="text" name="userId" id="userId" value="${user.userCode}"/>
                     <span>*请输入用户编码，且不能重复</span>
                     <div name="msg"></div>
                 </div>
                 <div>
                     <label for="userName">用户名称：</label>
-                    <input type="text" name="userName" id="userName"/>
+                    <input type="text" name="userName" id="userName" value="${user.userName}"/>
                     <span >*请输入用户名称</span>
                 </div>
                 <div>
                     <label for="userpassword">用户密码：</label>
-                    <input type="password" name="userpassword" id="userpassword"/>
+                    <input type="password" name="userpassword" id="userpassword" value="${user.userPassword}"/>
                     <span>*密码长度必须大于6位小于20位</span>
 
                 </div>
                 <div>
                     <label for="userRemi">确认密码：</label>
                     <input type="password" name="userRemi" id="userRemi" onblur="renew()"/>
-                    <span>*请输入确认密码</span>
+                    <span id="msg1">*请输入确认密码</span>
                 </div>
                 <div>
                     <label >用户性别：</label>
-
                     <select name="gender">
-                        <option name="gender" value="2">男</option>
-                        <option name="gender" value="1">女</option>
+                        <option <c:if test="${user.gender == 2}">selected="selected"</c:if> value="2">男</option>
+                        <option <c:if test="${user.gender == 1}">selected="selected"</c:if> value="1">女</option>
                     </select>
                     <span></span>
                 </div>
                 <div>
                     <label for="data">出生日期：</label>
-                    <input type="text" name="data" id="data"/>
+                    <input type="text" name="data" id="data" value="${user.birthday}"/>
                     <span >*</span>
                 </div>
                 <div>
                     <label for="userphone">用户电话：</label>
-                    <input type="text" name="userphone" id="userphone"/>
+                    <input type="text" name="userphone" id="userphone" value="${user.phone}"/>
                     <span >*</span>
                 </div>
                 <div>
                     <label for="userAddress">用户地址：</label>
-                    <input type="text" name="userAddress" id="userAddress"/>
+                    <input type="text" name="userAddress" id="userAddress" value="${user.address}"/>
                 </div>
                 <div>
                     <label >用户类别：</label>
-                    <input type="radio" name="userlei" value="1"/>管理员
-                    <input type="radio" name="userlei" value="2"/>经理
-                    <input type="radio" name="userlei" value="3"/>普通用户
+                    <input type="radio" name="userlei" value="1" <c:if test="${user.userRole == 1}">checked="checked" </c:if>/>管理员
+                    <input type="radio" name="userlei" value="2" <c:if test="${user.userRole == 2}">checked="checked" </c:if>/>经理
+                    <input type="radio" name="userlei" value="3" <c:if test="${user.userRole == 3}">checked="checked" </c:if>/>普通用户
 
                 </div>
                 <div class="providerAddBtn">
@@ -127,6 +139,8 @@
                     <input type="submit" value="保存" />
                     <input type="button" value="返回" onclick="history.back(-1)"/>
                 </div>
+                <input type="hidden" name="id" value="${user.id}">
+                <input type="hidden" name="modify" value="${modify}">
             </form>
         </div>
 

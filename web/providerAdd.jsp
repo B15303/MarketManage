@@ -45,38 +45,38 @@
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div class="">
                     <label for="providerId">供应商编码：</label>
-                    <input type="text" name="providerId" id="providerId"/>
+                    <input type="text" name="providerId" id="providerId" value="${provider.proCode}"/>
                     <span>*请输入供应商编码</span>
                 </div>
                 <div>
                     <label for="providerName">供应商名称：</label>
-                    <input type="text" name="providerName" id="providerName"/>
+                    <input type="text" name="providerName" id="providerName" value="${provider.proName}"/>
                     <span >*请输入供应商名称</span>
                 </div>
                 <div>
                     <label for="people">联系人：</label>
-                    <input type="text" name="contact" id="people"/>
+                    <input type="text" name="contact" id="people" value="${provider.proContact}"/>
                     <span>*请输入联系人</span>
 
                 </div>
                 <div>
                     <label for="phone">联系电话：</label>
-                    <input type="text" name="phone" id="phone"/>
+                    <input type="text" name="phone" id="phone" value="${provider.proPhone}"/>
                     <span>*请输入联系电话</span>
                 </div>
                 <div>
                     <label for="address">联系地址：</label>
-                    <input type="text" name="address" id="address"/>
+                    <input type="text" name="address" id="address" value="${provider.proAddress}"/>
                     <span>*请输入联系地址</span>
                 </div>
                 <div>
                     <label for="fax">传真：</label>
-                    <input type="text" name="fax" id="fax"/>
+                    <input type="text" name="fax" id="fax" value="${provider.proFax}"/>
                     <span>*请输入传真</span>
                 </div>
                 <div>
                     <label for="describe">描述：</label>
-                    <input type="text" name="describe" id="describe"/>
+                    <input type="text" name="describe" id="describe" value="${provider.proDesc}"/>
                 </div>
                 <div class="providerAddBtn">
                     <!--<a href="#">保存</a>-->
@@ -84,6 +84,8 @@
                     <input type="submit" value="保存" />
                     <input type="button" value="返回" onclick="history.back(-1)"/>
                 </div>
+                <input type="hidden" name="id" value="${provider.id}">
+                <input type="hidden" name="modify" value="${modify}">
             </form>
         </div>
 

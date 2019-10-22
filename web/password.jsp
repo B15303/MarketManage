@@ -5,6 +5,7 @@
     <title>超市账单管理系统</title>
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
 
     <%
         String flag = null;
@@ -20,14 +21,12 @@
 
     <script type="text/javascript">
     function renew() {   //确认密码
-        var newp = document.getElementById("newPassword");
-        var renew = document.getElementById("reNewPassword");
+        var newp = document.getElementById("newPassword").value;
+        var renew = document.getElementById("reNewPassword").value;
         if (newp == renew){
-            $("[id='msg']").html("√");
-            return false;
+            $("#msg").html("√");
         }else {
-            $("[id='msg']").html("两次密码不一致");
-            return false;
+            $("#msg").html("两次密码不一致");
         }
     }
     </script>
@@ -81,9 +80,9 @@
                     </div>
                     <div>
                         <label for="reNewPassword">确认新密码：</label>
-                        <input type="password" name="reNewPassword" id="reNewPassword" onchange="renew()" required/>
-                        <span >*请确认密码，保证和新密码一致</span>
-                        <div id="msg"></div>
+                        <input type="password" name="reNewPassword" id="reNewPassword" onblur=renew() required/>
+                        <%--<div id="msg"></div>--%><span id="msg">*请确认密码，保证和新密码一致</span>
+
                     </div>
                     <div class="providerAddBtn">
                         <!--<a href="#">保存</a>-->

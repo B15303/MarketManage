@@ -76,7 +76,7 @@
                     <td>${providerList.creationDate}</td>
                     <td>
                         <a href="providerView?id=${providerList.id}"><img src="img/read.png" alt="查看" title="查看"/></a>
-                        <a href="providerUpdate.jsp"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
+                        <a href="providerUpdate?id=${providerList.id}&modify=true"><img src="img/xiugai.png" alt="修改" title="修改"/></a>
                         <a href="proDelete?id=${providerList.id}" class="removeProvider"><img src="img/schu.png" alt="删除" title="删除"/></a>
                     </td>
                 </tr>
