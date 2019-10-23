@@ -151,7 +151,8 @@ public class ManageDaoImpl implements ManageDao {
 
     @Override
     public int getBillAdd(String[] param) throws Exception {
-        String sql = "insert into smbms_bill (billCode,productName,productUnit,productCount,providerId,isPayment) value(?,?,?,?,?,?)";
+        String sql = "insert into smbms_bill " +
+                "(billCode,productName,productUnit,productCount,totalPrice,providerId,isPayment) value(?,?,?,?,?,?,?)";
         int count = C3p0Utils.ProUpdate(sql,param);
 
         return count;

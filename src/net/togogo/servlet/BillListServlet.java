@@ -28,8 +28,10 @@ public class BillListServlet extends HttpServlet {
 //                String proId = providerId.toString();
 //                Smbms_Provider smbms_provider = manageService.getProById(proId);
 //            }
+            List<Smbms_Provider> providerList = (List<Smbms_Provider>)req.getAttribute("providerList");
             //将账单数据放入request域中
             req.setAttribute("billList",billList);
+            req.setAttribute("providerList",providerList);
             //发送到billList页面
             req.getRequestDispatcher("/billList.jsp").forward(req,resp);
         } catch (Exception e) {

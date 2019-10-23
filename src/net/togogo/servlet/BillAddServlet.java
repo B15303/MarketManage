@@ -43,6 +43,8 @@ public class BillAddServlet extends HttpServlet {
 
             if(count != 0) {
                 System.out.println("添加订单成功");
+            }else {
+                System.out.println(count);
             }
 
         } catch (Exception e) {

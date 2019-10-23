@@ -27,7 +27,7 @@
             <h2 class="leftH2"><span class="span1"></span>功能列表 <span></span></h2>
             <nav>
                 <ul class="list">
-                    <li id="active"><a href="providerList?bill=yes">账单管理</a></li>
+                    <li id="active"><a href="providerList?bill=true">账单管理</a></li>
                     <li><a href="providerList">供应商管理</a></li>
                     <li><a href="userList">用户管理</a></li>
                     <li><a href="password.jsp">密码修改</a></li>
@@ -78,7 +78,12 @@
                     <tr>
                         <td>${bills.billCode}</td>
                         <td>${bills.productName}</td>
-                        <td>${bills.providerId}</td>
+                        <td>
+                            <c:forEach var="providerList" items="${providerList}">
+                            <c:if test="${bills.providerId == providerList.id}">${providerList.proName}</c:if>
+                            </c:forEach>
+                                <%--${bills.providerId}--%>
+                        </td>
                         <td>${bills.totalPrice}</td>
                         <td>
                             <c:if test="${bills.isPayment == 1}">未支付</c:if>
