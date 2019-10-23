@@ -51,6 +51,6 @@ public class BillAddServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        req.getRequestDispatcher("billList").forward(req,resp);
+        req.getRequestDispatcher("providerList?bill=true").forward(req,resp);
     }
 }
