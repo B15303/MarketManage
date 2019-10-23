@@ -21,6 +21,9 @@ public class ProviderListServlet extends HttpServlet {
         //进入providerList页面，查询所有供应商的数据并显示在页面上
         String bill = req.getParameter("bill");
         System.out.println(bill);
+        if (bill==null/*||bill.equals("")*/){
+            bill = "false";
+        }
 
         try {
             //查询所有供应商
@@ -28,11 +31,11 @@ public class ProviderListServlet extends HttpServlet {
             //将数据存入request中
             req.setAttribute("providerList",providerList);
             //判断是否为billList请求的查询，true则进入billList继续bill查询，否则发送到providerList
-            if (bill.equals("true")) {//发送至providerList页面
+            if (!bill.equals("true")) {//发送至providerList页面
                 System.out.println(bill);
-                req.getRequestDispatcher("billList").forward(req,resp);
-            }else {//进入billList查询
                 req.getRequestDispatcher("providerList.jsp").forward(req, resp);
+            }else {//进入billList查询
+                req.getRequestDispatcher("billList").forward(req,resp);
             }
         } catch (Exception e) {
             e.printStackTrace();

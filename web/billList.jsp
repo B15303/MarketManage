@@ -41,8 +41,9 @@
                 <span>账单管理页面</span>
             </div>
             <div class="search">
+                <form action="billSearch" method="get">
                 <span>商品名称：</span>
-                <input type="text" placeholder="请输入商品的名称"/>
+                <input type="text" name="shangpin" placeholder="请输入商品的名称"/>
                 
                 <span>供应商：</span>
                 <select name="tigong" >
@@ -56,11 +57,12 @@
                 <span>是否付款：</span>
                 <select name="fukuan">
                     <option value="">--请选择--</option>
-                    <option value="">已付款</option>
-                    <option value="">未付款</option>
+                    <option value="2">已付款</option>
+                    <option value="1">未付款</option>
                 </select>
 
                 <input type="button" value="查询"/>
+                </form>
                 <a href="billGetProvider">添加订单</a>
             </div>
             <!--账单表格 样式和供应商公用-->

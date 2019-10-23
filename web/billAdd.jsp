@@ -72,11 +72,11 @@
                 </div>
                 <div>
                     <label >供应商：</label>
-                    <select >
+                    <select name="supplier">
                         <option name="supplier" value="">--请选择相应的提供商--</option>
 
                         <c:forEach var="supplier" items="${providerList}">
-                            <option name="supplier" value="${supplier.id}">${supplier.proName}</option>
+                            <option name="supplier" value="${supplier.id}">${supplier.id}${supplier.proName}</option>
                         </c:forEach>
                     </select>
                     <span>*请选择供应商</span>
