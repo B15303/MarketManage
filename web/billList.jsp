@@ -61,7 +61,7 @@
                 </select>
 
                 <input type="button" value="查询"/>
-                <a href="billAdd.jsp">添加订单</a>
+                <a href="billGetProvider">添加订单</a>
             </div>
             <!--账单表格 样式和供应商公用-->
             <table class="providerTable" cellpadding="0" cellspacing="0">

@@ -19,7 +19,7 @@ public class BillListServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //进入billList页面，查询所有账单数据并展示到billList页面
+            //进入billList页面，查询所有账单数据并展示到billList页面
 
         try {
             //查询所有账单数据

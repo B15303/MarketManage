@@ -7,6 +7,7 @@ import net.togogo.bean.Smbms_User;
 import java.util.List;
 
 public interface ManageDao {
+
     public List<Smbms_User> getUserAll() throws Exception;
     public int getPwdUpdate(String []param) throws Exception;
     public List<Smbms_Bill> getBillAll() throws Exception;
@@ -23,4 +24,6 @@ public interface ManageDao {
     public int getProUpdate(String []param) throws Exception;
     public int getUserDelete(String userId) throws Exception;
     public int getUserUpdate(String []param) throws Exception;
+
+    public int getBillAdd(String[] param) throws Exception;
 }

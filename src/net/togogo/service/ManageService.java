@@ -23,4 +23,6 @@ public interface ManageService {
     public int getProUpdate(String []param) throws Exception;
     public int getUserDelete(String userId) throws Exception;
     public int getUserUpdate(String []param) throws Exception;
+
+    public int getBillAdd(String []param) throws Exception;
 }

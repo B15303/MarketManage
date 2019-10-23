@@ -1,4 +1,5 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -41,7 +42,7 @@
             <span>账单管理页面 >> 订单添加页面</span>
         </div>
         <div class="providerAdd">
-            <form action="#">
+            <form action="billAdd" method="get">
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div class="">
                     <label for="billId">订单编码：</label>
@@ -71,11 +72,12 @@
                 </div>
                 <div>
                     <label >供应商：</label>
-                    <select name="supplier" >
-                        <option value="">--请选择相应的提供商--</option>
-                        <option value="">北京市粮油总公司</option>
-                        <option value="">邯郸市五得利面粉厂</option>
+                    <select >
+                        <option name="supplier" value="">--请选择相应的提供商--</option>
 
+                        <c:forEach var="supplier" items="${providerList}">
+                            <option name="supplier" value="${supplier.id}">${supplier.proName}</option>
+                        </c:forEach>
                     </select>
                     <span>*请选择供应商</span>
                 </div>
