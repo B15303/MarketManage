@@ -8,6 +8,7 @@ import net.togogo.utils.C3p0Utils;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ManageDaoImpl implements ManageDao {
@@ -161,7 +162,7 @@ public class ManageDaoImpl implements ManageDao {
     @Override
     public int getBillUpdate(String[] param) throws Exception {
         String sql = "UPDATE smbms_bill SET billCode = ?,productName = ?,productUnit = ?," +
-                     "productCount = ?,totalPrice = ?,providerId = ?,zhifu = ? WHERE id= ? ";
+                     "productCount = ?,totalPrice = ?,providerId = ?,isPayment = ? WHERE id= ? ";
         int count = C3p0Utils.ProUpdate(sql,param);
         return count;
     }
@@ -176,4 +177,30 @@ public class ManageDaoImpl implements ManageDao {
         return count;
     }
 
+    @Override
+    public List<Smbms_Bill> getBillByCondition(String productName, String providerId, String isPayment) {
+
+        String sql = "select * from smbms_bill where 1=1";
+        List<String>list = new ArrayList<>();
+
+        if (productName != null && !productName.equals("")) {
+            sql = sql + " and productName like ?";
+            list.add("%"+productName+"%");
+        }
+
+        if (providerId != null && !providerId.equals("")){
+            sql = sql + " and providerId = ?";
+            list.add(providerId);
+        }
+
+        if (isPayment != null && !isPayment.equals("")){
+            sql = sql + " and isPayment = ?";
+            list.add(isPayment);
+        }
+
+        BeanListHandler<Smbms_Bill> beanListHandler = new BeanListHandler<>(Smbms_Bill.class);
+        List<Smbms_Bill> bills = C3p0Utils.BeanListHandlers(sql,beanListHandler,list.toArray());
+
+        return bills;
+    }
 }

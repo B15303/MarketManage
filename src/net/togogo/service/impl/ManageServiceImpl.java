@@ -104,4 +104,8 @@ public class ManageServiceImpl implements ManageService {
         return manageDao.getProUpdate(param);
     }
 
+    @Override
+    public List<Smbms_Bill> getBillByCondition(String productName, String providerId, String isPayment) {
+        return manageDao.getBillByCondition(productName, providerId, isPayment);
+    }
 }

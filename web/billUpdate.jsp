@@ -42,37 +42,37 @@
             <span>账单管理页面 >> 订单添加页面</span>
         </div>
         <div class="providerAdd">
-            <form action="#">
+            <form action="billUpdated">
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div class="">
                     <label for="providerId">订单编码：</label>
-                    <input type="text" name="providerId" id="providerId" placeholder="${changedList.billCode}"/>
+                    <input type="text" name="providerId" id="providerId" value="${changedList.billCode}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="providerName">商品名称：</label>
-                    <input type="text" name="providerName" id="providerName" placeholder="${changedList.productName}"/>
+                    <input type="text" name="providerName" id="providerName" value="${changedList.productName}"/>
                     <span >*</span>
                 </div>
                 <div>
                     <label for="people">商品单位：</label>
-                    <input type="text" name="people" id="people" placeholder="${changedList.productUnit}"/>
+                    <input type="text" name="people" id="people" value="${changedList.productUnit}"/>
                     <span>*</span>
 
                 </div>
                 <div>
                     <label for="phone">商品数量：</label>
-                    <input type="text" name="phone" id="phone" placeholder="${changedList.productCount}"/>
+                    <input type="text" name="phone" id="phone" value="${changedList.productCount}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="address">总金额：</label>
-                    <input type="text" name="address" id="address" placeholder="${changedList.totalPrice}"/>
+                    <input type="text" name="address" id="address" value="${changedList.totalPrice}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="fax">供应商：</label>
-                    <input type="text" name="fax" id="fax" placeholder="${chengedProvider.proName}"/>
+                    <input type="text" name="fax" id="fax" value="${chengedProvider.proName}"/>
                     <span>*</span>
                 </div>
                 <div>
@@ -89,8 +89,8 @@
                 <div class="providerAddBtn">
                     <!--<a href="#">保存</a>-->
                     <!--<a href="billList.jsp">返回</a>-->
-                    <a href="billUpdated"><input type="button" value="保存" /></a>
-                    <a href="billList.jsp"><input type="button" value="返回" /></a>
+                    <input type="submit" value="保存" />
+                    <input type="button" value="返回" onclick="history.back(-1)"/>
                 </div>
             </form>
         </div>

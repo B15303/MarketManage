@@ -61,7 +61,7 @@
                     <option value="1">未付款</option>
                 </select>
 
-                <input type="button" value="查询"/>
+                <input type="submit" value="查询"/>
                 </form>
                 <a href="billGetProvider">添加订单</a>
             </div>

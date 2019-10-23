@@ -23,7 +23,7 @@ public interface ManageService {
     public int getProUpdate(String []param) throws Exception;
     public int getUserDelete(String userId) throws Exception;
     public int getUserUpdate(String []param) throws Exception;
-
+    public List<Smbms_Bill> getBillByCondition(String productName,String providerId,String isPayment);
     public int getBillAdd(String []param) throws Exception;
 
     public int getBillUpdate(String[] param) throws Exception;
