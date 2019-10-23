@@ -19,14 +19,21 @@ public class ProviderListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //进入providerList页面，查询所有供应商的数据并显示在页面上
+        String bill = req.getParameter("bill");
+        System.out.println(bill);
 
         try {
             //查询所有供应商
             List<Smbms_Provider> providerList = manageService.getProviderAll();
             //将数据存入request中
             req.setAttribute("providerList",providerList);
-            //发送至providerList页面
-            req.getRequestDispatcher("providerList.jsp").forward(req,resp);
+            //判断是否为billList请求的查询，true则进入billList继续bill查询，否则发送到providerList
+            if (bill.equals("yes")) {//发送至providerList页面
+                System.out.println(bill);
+                req.getRequestDispatcher("billList").forward(req,resp);
+            }else {//进入billList查询
+                req.getRequestDispatcher("providerList.jsp").forward(req, resp);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
