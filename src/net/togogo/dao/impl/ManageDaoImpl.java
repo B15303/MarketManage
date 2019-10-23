@@ -159,6 +159,14 @@ public class ManageDaoImpl implements ManageDao {
     }
 
     @Override
+    public int getBillUpdate(String[] param) throws Exception {
+        String sql = "UPDATE smbms_bill SET billCode = ?,productName = ?,productUnit = ?," +
+                     "productCount = ?,totalPrice = ?,providerId = ?,zhifu = ? WHERE id= ? ";
+        int count = C3p0Utils.ProUpdate(sql,param);
+        return count;
+    }
+
+    @Override
     public int getProUpdate(String[] param) throws Exception {
 
         String sql = "UPDATE smbms_provider SET proCode = ?,proName = ?,proContact = ?," +

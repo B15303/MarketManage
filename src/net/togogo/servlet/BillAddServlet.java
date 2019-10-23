@@ -43,14 +43,12 @@ public class BillAddServlet extends HttpServlet {
 
             if(count != 0) {
                 System.out.println("添加订单成功");
-            }else {
-                System.out.println(count);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        req.getRequestDispatcher("billList").forward(req,resp);
+        req.getRequestDispatcher("providerList?bill=true").forward(req,resp);
     }
 }

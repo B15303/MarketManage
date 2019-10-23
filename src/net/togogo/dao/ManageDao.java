@@ -26,4 +26,6 @@ public interface ManageDao {
     public int getUserUpdate(String []param) throws Exception;
 
     public int getBillAdd(String[] param) throws Exception;
+
+    public int getBillUpdate(String[] param) throws Exception;
 }

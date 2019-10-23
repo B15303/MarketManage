@@ -93,6 +93,11 @@ public class ManageServiceImpl implements ManageService {
         return manageDao.getBillAdd(param);
     }
 
+    @Override
+    public int getBillUpdate(String[] param) throws Exception {
+        return manageDao.getBillUpdate(param);
+    }
+
 
     @Override
     public int getProUpdate(String[] param) throws Exception {

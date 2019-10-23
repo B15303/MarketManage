@@ -1,4 +1,5 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -45,45 +46,51 @@
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div class="">
                     <label for="providerId">订单编码：</label>
-                    <input type="text" name="providerId" id="providerId" placeholder="322"/>
+                    <input type="text" name="providerId" id="providerId" placeholder="${changedList.billCode}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="providerName">商品名称：</label>
-                    <input type="text" name="providerName" id="providerName" placeholder="123"/>
+                    <input type="text" name="providerName" id="providerName" placeholder="${changedList.productName}"/>
                     <span >*</span>
                 </div>
                 <div>
                     <label for="people">商品单位：</label>
-                    <input type="text" name="people" id="people" placeholder="北极"/>
+                    <input type="text" name="people" id="people" placeholder="${changedList.productUnit}"/>
                     <span>*</span>
 
                 </div>
                 <div>
                     <label for="phone">商品数量：</label>
-                    <input type="text" name="phone" id="phone" placeholder="22"/>
+                    <input type="text" name="phone" id="phone" placeholder="${changedList.productCount}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="address">总金额：</label>
-                    <input type="text" name="address" id="address" placeholder="200"/>
+                    <input type="text" name="address" id="address" placeholder="${changedList.totalPrice}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="fax">供应商：</label>
-                    <input type="text" name="fax" id="fax" placeholder="北大"/>
+                    <input type="text" name="fax" id="fax" placeholder="${chengedProvider.proName}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label >是否付款：</label>
-                    <input type="radio" name="zhifu"checked/>未付款
-                    <input type="radio" name="zhifu"/>已付款
+                    <c:if test="${changedList.isPayment == 1}" >
+                        <input type="radio" name="zhifu" checked/>未付款
+                        <input type="radio" name="zhifu" />已付款
+                    </c:if>
+                    <c:if test="${changedList.isPayment == 2}" >
+                        <input type="radio" name="zhifu" />未付款
+                        <input type="radio" name="zhifu" checked/>已付款
+                    </c:if>
                 </div>
                 <div class="providerAddBtn">
                     <!--<a href="#">保存</a>-->
                     <!--<a href="billList.jsp">返回</a>-->
-                    <input type="button" value="保存" onclick="history.back(-1)"/>
-                    <input type="button" value="返回" onclick="history.back(-1)"/>
+                    <a href="billUpdated"><input type="button" value="保存" /></a>
+                    <a href="billList.jsp"><input type="button" value="返回" /></a>
                 </div>
             </form>
         </div>
