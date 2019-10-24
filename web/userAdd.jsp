@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="css/style.css"/>
     <script src="js/jquery-1.8.3.min.js"></script>
 
+    <%
+        String username = (String) session.getAttribute("UserName");
+        if (null == username){
+            response.sendRedirect("login.jsp");
+        }
+    %>
+
     <script type="text/javascript">
         $(function () {
             $("[name='userId']").blur(function () {

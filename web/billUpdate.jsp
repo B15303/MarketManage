@@ -6,6 +6,14 @@
     <title>超市账单管理系统</title>
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+
+    <%
+        String username = (String) session.getAttribute("UserName");
+        if (null == username){
+            response.sendRedirect("login.jsp");
+        }
+    %>
+
 </head>
 <body>
 <!--头部-->

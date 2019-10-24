@@ -19,6 +19,13 @@
         }
     %>
 
+    <%
+        String username = (String) session.getAttribute("UserName");
+        if (null == username){
+            response.sendRedirect("login.jsp");
+        }
+    %>
+
     <script type="text/javascript">
     function renew() {   //确认密码
         var newp = document.getElementById("newPassword").value;

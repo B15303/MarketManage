@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/public.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
+    <%
+        String username = (String) session.getAttribute("UserName");
+        if (null == username){
+            response.sendRedirect("login.jsp");
+        }
+    %>
+
     <script type="text/javascript">
         function sendname() {
             var sendname = $("#sendname").val();

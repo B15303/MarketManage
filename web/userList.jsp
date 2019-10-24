@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="css/style.css"/>
 
     <%
+        String username = (String) session.getAttribute("UserName");
+        if (null == username){
+            response.sendRedirect("login.jsp");
+        }
+    %>
+
+    <%
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
         String now = sdf.format(date);
