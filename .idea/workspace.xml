@@ -8,10 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="835bbee8-3ecb-481d-b638-bbaf6349c77b" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/togogo/servlet/billUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/servlet/billUpdateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/togogo/servlet/BillAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/servlet/BillAddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/togogo/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/togogo/servlet/billUpdatedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/togogo/servlet/billUpdatedServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/billUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/billUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/css/public.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/public.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,19 +27,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/billUpdate.jsp">
+        <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+            <state relative-caret-position="275">
+              <caret line="41" column="76" lean-forward="true" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/billUpdateServlet.java">
+        <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="298">
+              <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+              <folding>
+                <element signature="method#getPwdUpdate#0;class#ManageDaoImpl#0" />
+                <element signature="method#getBillAll#0;class#ManageDaoImpl#0" />
+                <element signature="method#getUserAll#0;class#ManageDaoImpl#0" />
+                <element signature="method#getProviderAll#0;class#ManageDaoImpl#0" />
+                <element signature="method#getProById#0;class#ManageDaoImpl#0" />
+                <element signature="method#getUserByName#0;class#ManageDaoImpl#0" />
+                <element signature="method#getProByName#0;class#ManageDaoImpl#0" />
+                <element signature="method#getUserById#0;class#ManageDaoImpl#0" />
+                <element signature="method#getBillById#0;class#ManageDaoImpl#0" />
+                <element signature="method#getUserAdd#0;class#ManageDaoImpl#0" />
+                <element signature="method#getBillDelete#0;class#ManageDaoImpl#0" />
+                <element signature="method#getProDelete#0;class#ManageDaoImpl#0" />
+                <element signature="method#getUserDelete#0;class#ManageDaoImpl#0" />
+                <element signature="method#getUserUpdate#0;class#ManageDaoImpl#0" />
+                <element signature="method#getBillAdd#0;class#ManageDaoImpl#0" />
+                <element signature="method#getBillUpdate#0;class#ManageDaoImpl#0" />
+                <element signature="method#getBillByCondition#0;class#ManageDaoImpl#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="700">
+              <caret line="48" column="110" selection-start-line="48" selection-start-column="110" selection-end-line="48" selection-end-column="110" />
             </state>
           </provider>
         </entry>
@@ -45,35 +75,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/billUpdatedServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+            <state relative-caret-position="152">
+              <caret line="35" column="65" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/billList.jsp">
+        <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/BillAddServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="63" column="49" selection-start-line="63" selection-start-column="49" selection-end-line="63" selection-end-column="49" />
+            <state relative-caret-position="308">
+              <caret line="38" column="96" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="96" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/billAdd.jsp">
+        <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="92" column="52" selection-start-line="92" selection-start-column="52" selection-end-line="92" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/userAdd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-875">
-              <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+            <state relative-caret-position="175">
+              <caret line="24" column="92" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -119,7 +140,6 @@
         <option value="$PROJECT_DIR$/web/userList.jsp" />
         <option value="$PROJECT_DIR$/web/userUpdate.jsp" />
         <option value="$PROJECT_DIR$/web/userView.jsp" />
-        <option value="$PROJECT_DIR$/src/net/togogo/servlet/BillAddServlet.java" />
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/BillDeleteServlet.java" />
         <option value="$PROJECT_DIR$/web/billAdd.jsp" />
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/ProviderListServlet.java" />
@@ -127,12 +147,16 @@
         <option value="$PROJECT_DIR$/src/net/togogo/service/ManageService.java" />
         <option value="$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/billList.jsp" />
-        <option value="$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/BillSearchServlet.java" />
         <option value="$PROJECT_DIR$/web/css/public.css" />
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/billUpdateServlet.java" />
-        <option value="$PROJECT_DIR$/src/net/togogo/servlet/billUpdatedServlet.java" />
         <option value="$PROJECT_DIR$/web/billUpdate.jsp" />
+        <option value="$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java" />
+        <option value="$PROJECT_DIR$/src/net/togogo/servlet/BillAddServlet.java" />
+        <option value="$PROJECT_DIR$/src/net/togogo/servlet/billUpdatedServlet.java" />
+        <option value="$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java" />
+        <option value="$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java" />
+        <option value="$PROJECT_DIR$/src/net/togogo/servlet/LoginServlet.java" />
       </list>
     </option>
   </component>
@@ -445,7 +469,7 @@
       <workItem from="1571620526612" duration="20923000" />
       <workItem from="1571723926834" duration="9699000" />
       <workItem from="1571794888709" duration="7980000" />
-      <workItem from="1571881315134" duration="2974000" />
+      <workItem from="1571881315134" duration="5617000" />
     </task>
     <task id="LOCAL-00001" summary="1.创建bean类映射数据库表&#10;2.创建LoginServlet类">
       <created>1571387490841</created>
@@ -594,11 +618,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571820739547</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="1.实现修改账单信息">
+      <created>1571885486205</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1571885486205</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17796000" />
+    <option name="totallyTimeSpent" value="20439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -613,7 +644,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32741934" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.38387096" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.18870968" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -733,7 +764,20 @@
     <MESSAGE value="1.修改其他页面跳转至账单管理的url地址&#10;2.添加账单传供应商值为空（已改）" />
     <MESSAGE value="1.修复跳转供应商管理页面出现空指针" />
     <MESSAGE value="1.实现按商品名称/供应商/是否付款查询账单" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.实现按商品名称/供应商/是否付款查询账单" />
+    <MESSAGE value="1.实现修改账单信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.实现修改账单信息" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/c3p0-config.xml">
@@ -841,20 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/ManageDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="26" column="90" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/BillAddServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/BillSearchServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
@@ -862,13 +892,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2525">
-          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -918,13 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="203" column="21" selection-start-line="203" selection-start-column="21" selection-end-line="203" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/billList.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -953,20 +969,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/userAdd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-875">
-          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/billUpdatedServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/billUpdateServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -976,8 +978,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/billUpdate.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="47" column="61" lean-forward="true" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+        <state relative-caret-position="152">
+          <caret line="88" column="65" selection-start-line="88" selection-start-column="65" selection-end-line="88" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/ManageDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="26" column="90" selection-start-line="26" selection-start-column="90" selection-end-line="26" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/service/impl/ManageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1183">
+          <caret line="108" column="8" selection-start-line="108" selection-start-column="8" selection-end-line="108" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/userAdd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="68" column="51" selection-start-line="68" selection-start-column="51" selection-end-line="68" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/UserAddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="24" column="92" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="24" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/BillAddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="38" column="96" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/billUpdatedServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="35" column="65" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="35" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="177" column="21" selection-start-line="177" selection-start-column="21" selection-end-line="177" selection-end-column="21" />
+          <folding>
+            <element signature="method#getPwdUpdate#0;class#ManageDaoImpl#0" />
+            <element signature="method#getBillAll#0;class#ManageDaoImpl#0" />
+            <element signature="method#getUserAll#0;class#ManageDaoImpl#0" />
+            <element signature="method#getProviderAll#0;class#ManageDaoImpl#0" />
+            <element signature="method#getProById#0;class#ManageDaoImpl#0" />
+            <element signature="method#getUserByName#0;class#ManageDaoImpl#0" />
+            <element signature="method#getProByName#0;class#ManageDaoImpl#0" />
+            <element signature="method#getUserById#0;class#ManageDaoImpl#0" />
+            <element signature="method#getBillById#0;class#ManageDaoImpl#0" />
+            <element signature="method#getUserAdd#0;class#ManageDaoImpl#0" />
+            <element signature="method#getBillDelete#0;class#ManageDaoImpl#0" />
+            <element signature="method#getProDelete#0;class#ManageDaoImpl#0" />
+            <element signature="method#getUserDelete#0;class#ManageDaoImpl#0" />
+            <element signature="method#getUserUpdate#0;class#ManageDaoImpl#0" />
+            <element signature="method#getBillAdd#0;class#ManageDaoImpl#0" />
+            <element signature="method#getBillUpdate#0;class#ManageDaoImpl#0" />
+            <element signature="method#getBillByCondition#0;class#ManageDaoImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/ProviderAddServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="48" column="110" selection-start-line="48" selection-start-column="110" selection-end-line="48" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/togogo/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="41" column="76" lean-forward="true" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
         </state>
       </provider>
     </entry>

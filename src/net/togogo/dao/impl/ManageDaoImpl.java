@@ -103,8 +103,8 @@ public class ManageDaoImpl implements ManageDao {
     public int getProviderAdd(String[] param) throws Exception {
 
         String sql = "INSERT INTO " +
-                     "smbms_provider (proCode,proName,proContact,proPhone,proAddress,proFax,proDesc) " +
-                     "VALUES (?,?,?,?,?,?,?)";
+                     "smbms_provider (proCode,proName,proContact,proPhone,proAddress,proFax,proDesc,createdBy,creationDate) " +
+                     "VALUES (?,?,?,?,?,?,?,?,?)";
         int count = C3p0Utils.ProUpdate(sql,param);
         return count;
     }
@@ -113,8 +113,8 @@ public class ManageDaoImpl implements ManageDao {
     public int getUserAdd(String[] param) throws Exception {
 
         String sql = "INSERT INTO " +
-                "smbms_user (userCode,userName,userPassword,gender,birthday,phone,address,userRole) " +
-                "VALUES (?,?,?,?,?,?,?,?)";
+                "smbms_user (userCode,userName,userPassword,gender,birthday,phone,address,userRole,createdBy,creationDate) " +
+                "VALUES (?,?,?,?,?,?,?,?,?,?)";
         int count = C3p0Utils.ProUpdate(sql,param);
         return count;
     }
@@ -144,7 +144,8 @@ public class ManageDaoImpl implements ManageDao {
     public int getUserUpdate(String[] param) throws Exception {
 
         String sql = "UPDATE smbms_user SET userCode= ?,userName = ?,userPassword = ?," +
-                     "gender = ?,birthday = ?,phone = ?,address = ?,userRole = ? WHERE id= ? ";
+                     "gender = ?,birthday = ?,phone = ?,address = ?,userRole = ?,modifyBy = ?," +
+                     "modifyDate = ? WHERE id= ? ";
 
         int count = C3p0Utils.ProUpdate(sql,param);
         return count;
@@ -153,7 +154,8 @@ public class ManageDaoImpl implements ManageDao {
     @Override
     public int getBillAdd(String[] param) throws Exception {
         String sql = "insert into smbms_bill " +
-                "(billCode,productName,productUnit,productCount,totalPrice,providerId,isPayment) value(?,?,?,?,?,?,?)";
+                     "(billCode,productName,productUnit,productCount,totalPrice,providerId,isPayment,createdBy,creationDate)" +
+                     " value(?,?,?,?,?,?,?,?,?)";
         int count = C3p0Utils.ProUpdate(sql,param);
 
         return count;
@@ -162,7 +164,8 @@ public class ManageDaoImpl implements ManageDao {
     @Override
     public int getBillUpdate(String[] param) throws Exception {
         String sql = "UPDATE smbms_bill SET billCode = ?,productName = ?,productUnit = ?," +
-                     "productCount = ?,totalPrice = ?,providerId = ?,isPayment = ? WHERE id= ? ";
+                     "productCount = ?,totalPrice = ?,providerId = ?,isPayment = ?,modifyBy = ?,modifyDate = ?" +
+                     " WHERE id= ? ";
         int count = C3p0Utils.ProUpdate(sql,param);
         return count;
     }
@@ -171,7 +174,8 @@ public class ManageDaoImpl implements ManageDao {
     public int getProUpdate(String[] param) throws Exception {
 
         String sql = "UPDATE smbms_provider SET proCode = ?,proName = ?,proContact = ?," +
-                     "proPhone = ?,proAddress = ?,proFax = ?,proDesc = ? WHERE id= ? ";
+                     "proPhone = ?,proAddress = ?,proFax = ?,proDesc = ?,modifyBy = ?,modifyDate = ? " +
+                     "WHERE id= ? ";
 
         int count = C3p0Utils.ProUpdate(sql,param);
         return count;

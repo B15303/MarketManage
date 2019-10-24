@@ -39,6 +39,7 @@ public class LoginServlet extends HttpServlet {
                         HttpSession session = req.getSession();
                         session.setAttribute("UserName", smbms_user.getUserName());
                         session.setAttribute("usercode", smbms_user.getUserCode());
+                        session.setAttribute("userRole",smbms_user.getId());
                         break;
                     } else {
                         flag = "false"; //用户名密码错误
