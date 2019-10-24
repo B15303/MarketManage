@@ -28,8 +28,18 @@ public class billUpdatedServlet extends HttpServlet {
 
         String []param = {providerId,providerName,people,phone,address,fax,zhifu,billId};
 
+        System.out.println(providerId);
+        System.out.println(providerName);
+        System.out.println(people);
+        System.out.println(phone);
+        System.out.println(address);
+        System.out.println(fax);
+        System.out.println(zhifu);
+        System.out.println(billId);
+
         try {
             int count = manageService.getBillUpdate(param);
+            System.out.println("Servlet");
 
         } catch (Exception e) {
             e.printStackTrace();

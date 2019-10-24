@@ -45,46 +45,48 @@
             <form action="billUpdated">
                 <!--div的class 为error是验证错误，ok是验证成功-->
                 <div class="">
+                    <input type="hidden" name="id" value="${Bill.id}"/>
                     <label for="providerId">订单编码：</label>
-                    <input type="text" name="providerId" id="providerId" value="${changedList.billCode}"/>
+                    <input type="text" name="providerId" id="providerId" value="${Bill.billCode}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="providerName">商品名称：</label>
-                    <input type="text" name="providerName" id="providerName" value="${changedList.productName}"/>
+                    <input type="text" name="providerName" id="providerName" value="${Bill.productName}"/>
                     <span >*</span>
                 </div>
                 <div>
                     <label for="people">商品单位：</label>
-                    <input type="text" name="people" id="people" value="${changedList.productUnit}"/>
+                    <input type="text" name="people" id="people" value="${Bill.productUnit}"/>
                     <span>*</span>
 
                 </div>
                 <div>
                     <label for="phone">商品数量：</label>
-                    <input type="text" name="phone" id="phone" value="${changedList.productCount}"/>
+                    <input type="text" name="phone" id="phone" value="${Bill.productCount}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="address">总金额：</label>
-                    <input type="text" name="address" id="address" value="${changedList.totalPrice}"/>
+                    <input type="text" name="address" id="address" value="${Bill.totalPrice}"/>
                     <span>*</span>
                 </div>
                 <div>
                     <label for="fax">供应商：</label>
-                    <input type="text" name="fax" id="fax" value="${chengedProvider.proName}"/>
+                    <%--<input type="text" name="fax" id="fax" value=""/>--%>
+                    <select name = "fax" id = "fax">
+                        <c:forEach var="providers" items="${Providers}">
+                        <option value="${providers.id}" <c:if test="${providers.id == Bill.providerId}">selected</c:if>>
+                                ${providers.id}${providers.proName}
+                        </option>
+                        </c:forEach>
+                    </select>
                     <span>*</span>
                 </div>
                 <div>
                     <label >是否付款：</label>
-                    <c:if test="${changedList.isPayment == 1}" >
-                        <input type="radio" name="zhifu" checked/>未付款
-                        <input type="radio" name="zhifu" />已付款
-                    </c:if>
-                    <c:if test="${changedList.isPayment == 2}" >
-                        <input type="radio" name="zhifu" />未付款
-                        <input type="radio" name="zhifu" checked/>已付款
-                    </c:if>
+                        <input type="radio" name="zhifu" value="1" <c:if test="${Bill.isPayment == 1}">checked</c:if>/>未付款
+                        <input type="radio" name="zhifu" value="2" <c:if test="${Bill.isPayment == 2}">checked</c:if>/>已付款
                 </div>
                 <div class="providerAddBtn">
                     <!--<a href="#">保存</a>-->

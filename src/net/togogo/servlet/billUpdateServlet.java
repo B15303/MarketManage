@@ -23,13 +23,12 @@ public class billUpdateServlet extends HttpServlet {
         String id = req.getParameter("id");
 
         try {
-            Smbms_Bill changedList = manageService.getBillById(id);
-            int i = changedList.getProviderId();
+            Smbms_Bill Bill = manageService.getBillById(id);
 
-            Smbms_Provider chengedProvider = manageService.getProById(String.valueOf(i));
+            List<Smbms_Provider> Providers = manageService.getProviderAll();
 
-            req.setAttribute("changedList",changedList);
-            req.setAttribute("chengedProvider",chengedProvider);
+            req.setAttribute("Bill",Bill);
+            req.setAttribute("Providers",Providers);
 
         } catch (Exception e) {
             e.printStackTrace();
