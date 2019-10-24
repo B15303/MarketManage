@@ -1,4 +1,5 @@
-﻿<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -30,7 +31,9 @@
     function renew() {   //确认密码
         var newp = document.getElementById("newPassword").value;
         var renew = document.getElementById("reNewPassword").value;
-        if (newp == renew){
+        if (newp == "" || renew == ""){
+            $("#msg").html("密码不能为空");
+        } else if (newp == renew){
             $("#msg").html("√");
         }else {
             $("#msg").html("两次密码不一致");
@@ -93,7 +96,7 @@
                     </div>
                     <div class="providerAddBtn">
                         <!--<a href="#">保存</a>-->
-                        <input type="submit" value="保存">
+                        <input type="submit" id="subbtn" value="保存" />
                     </div>
                 </form>
             </div>

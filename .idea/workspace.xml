@@ -8,20 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="835bbee8-3ecb-481d-b638-bbaf6349c77b" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/billAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/billAdd.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/billList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/billList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/billUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/billUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/billView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/billView.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/password.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/password.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/providerAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/providerAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/providerList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/providerList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/providerUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/providerUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/providerView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/providerView.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/public.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/public.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userAdd.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userAdd.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userUpdate.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userUpdate.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/userView.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/userView.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,91 +23,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/password.jsp">
+        <entry file="file://$PROJECT_DIR$/web/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+            <state relative-caret-position="-1450">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/providerAdd.jsp">
+        <entry file="file://$PROJECT_DIR$/web/billList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/providerList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/providerUpdate.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/providerView.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/public.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/userAdd.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/userList.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/userUpdate.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            <state relative-caret-position="-36">
+              <caret line="71" column="74" lean-forward="true" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/userView.jsp">
+        <entry file="file://$PROJECT_DIR$/web/password.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="14">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -144,6 +69,7 @@
       <find>product</find>
       <find>button</find>
       <find>changedList</find>
+      <find>subBtn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,10 +95,8 @@
         <option value="$PROJECT_DIR$/src/net/togogo/dao/impl/ManageDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/net/togogo/servlet/LoginServlet.java" />
         <option value="$PROJECT_DIR$/web/billAdd.jsp" />
-        <option value="$PROJECT_DIR$/web/billList.jsp" />
         <option value="$PROJECT_DIR$/web/billUpdate.jsp" />
         <option value="$PROJECT_DIR$/web/billView.jsp" />
-        <option value="$PROJECT_DIR$/web/password.jsp" />
         <option value="$PROJECT_DIR$/web/providerAdd.jsp" />
         <option value="$PROJECT_DIR$/web/providerList.jsp" />
         <option value="$PROJECT_DIR$/web/providerUpdate.jsp" />
@@ -182,6 +106,8 @@
         <option value="$PROJECT_DIR$/web/userList.jsp" />
         <option value="$PROJECT_DIR$/web/userUpdate.jsp" />
         <option value="$PROJECT_DIR$/web/userView.jsp" />
+        <option value="$PROJECT_DIR$/web/billList.jsp" />
+        <option value="$PROJECT_DIR$/web/password.jsp" />
       </list>
     </option>
   </component>
@@ -281,6 +207,12 @@
               <item name="MarketManage" type="b2602c69:ProjectViewProjectNode" />
               <item name="MarketManage" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MarketManage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MarketManage" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MarketManage" type="b2602c69:ProjectViewProjectNode" />
@@ -494,7 +426,7 @@
       <workItem from="1571620526612" duration="20923000" />
       <workItem from="1571723926834" duration="9699000" />
       <workItem from="1571794888709" duration="7980000" />
-      <workItem from="1571881315134" duration="8934000" />
+      <workItem from="1571881315134" duration="12032000" />
     </task>
     <task id="LOCAL-00001" summary="1.创建bean类映射数据库表&#10;2.创建LoginServlet类">
       <created>1571387490841</created>
@@ -657,15 +589,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571887939506</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="1.增加每个页面无登录跳转，防止未登录就能进入系统">
+      <created>1571901368980</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1571901368980</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23756000" />
+    <option name="totallyTimeSpent" value="26854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15355521" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -799,7 +737,8 @@
     <MESSAGE value="1.实现按商品名称/供应商/是否付款查询账单" />
     <MESSAGE value="1.实现修改账单信息" />
     <MESSAGE value="1.增加创建/修改时，将创建/修改人以及时间加入数据库中" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.增加创建/修改时，将创建/修改人以及时间加入数据库中" />
+    <MESSAGE value="1.增加每个页面无登录跳转，防止未登录就能进入系统" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.增加每个页面无登录跳转，防止未登录就能进入系统" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -822,11 +761,6 @@
         <state relative-caret-position="-875">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1397" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -892,13 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="224" column="1" lean-forward="true" selection-start-line="224" selection-start-column="1" selection-end-line="224" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="295" column="38" lean-forward="true" selection-start-line="295" selection-start-column="38" selection-end-line="295" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1002,13 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/billList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/billUpdate.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -1027,13 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/password.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1097,6 +1010,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
           <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-106">
+          <caret line="93" column="7" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1450">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/billList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="71" column="74" lean-forward="true" selection-start-line="71" selection-start-column="74" selection-end-line="71" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/password.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>
